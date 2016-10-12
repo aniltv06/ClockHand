@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,34 +16,45 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxC-Ll-e3g" customClass="hand" customModule="clockHand" customModuleProvider="target">
-                                <rect key="frame" x="150" y="150" width="300" height="300"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="TS2-T0-dbo"/>
-                                    <constraint firstAttribute="height" constant="300" id="fvY-6t-94k"/>
+                                    <constraint firstAttribute="width" constant="300" id="4CL-C2-0PK"/>
+                                    <constraint firstAttribute="height" constant="300" id="7yi-tv-uZA"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anil's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddi-vL-IjV">
+                                <color key="tintColor" red="0.1932245799" green="0.34524296469999999" blue="0.18506390180000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ESY-fT-Jrr"/>
+                                    <constraint firstAttribute="width" constant="41" id="U0r-Ee-PqU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="1" green="0.14114406342787289" blue="0.28474714416495284" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yON-dY-ONX">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rxC-Ll-e3g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="185" id="GsL-Cp-jyL"/>
-                            <constraint firstItem="rxC-Ll-e3g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TeG-Ko-jIQ"/>
-                            <constraint firstItem="rxC-Ll-e3g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="180" id="biT-fr-MR3"/>
-                            <constraint firstItem="rxC-Ll-e3g" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iOM-xb-TqF"/>
+                            <constraint firstItem="rxC-Ll-e3g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BqD-gq-p4K"/>
+                            <constraint firstItem="rxC-Ll-e3g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Ekf-ZN-MdG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ddi-vL-IjV" secondAttribute="trailing" constant="1" id="Fn5-zW-rHe"/>
+                            <constraint firstItem="yON-dY-ONX" firstAttribute="top" secondItem="rxC-Ll-e3g" secondAttribute="bottom" constant="30" id="Gm0-12-MoD"/>
+                            <constraint firstItem="yON-dY-ONX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MEo-UP-Tcm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ddi-vL-IjV" secondAttribute="bottom" constant="20" id="PSe-I5-Tsh"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="GsL-Cp-jyL"/>
-                                <exclude reference="biT-fr-MR3"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="circle" destination="rxC-Ll-e3g" id="54G-LZ-b9r"/>
+                        <outlet property="label" destination="yON-dY-ONX" id="RhF-HS-E4D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
